@@ -6,7 +6,7 @@
                 <ul class="list-inline list-inline-dots mb-0">
                   <li class="list-inline-item">
                     
-                    Developed By
+                    Developed By:
                     <a href="." class="link-secondary">99Codehub</a>
                   </li>
                   
