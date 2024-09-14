@@ -18,9 +18,9 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.1
         with:
-          host: ${{ secrets.SERVER_HOST }}                # Your server IP or domain
-          username: ${{ secrets.SERVER_USER }}            # Your SSH username (e.g., root, ubuntu)
-          key: ${{ secrets.SSH_PRIVATE_KEY }}             # SSH private key to access the server
+          host: ${{ secrets.82.112.229.9 }}                # Your server IP or domain
+          username: ${{ secrets.u898003757.guri }}            # Your SSH username (e.g., root, ubuntu)
+          key: ${{ secrets.git@github.com:r-guri/resume.git }}             # SSH private key to access the server
           passphrase: ${{ secrets.SSH_PASSPHRASE }}       # (Optional) passphrase for the SSH key
           script: |
             cd /var/www/html/your-repo                    # Navigate to your project directory
