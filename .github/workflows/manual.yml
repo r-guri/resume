@@ -1,33 +1,19 @@
-name: Deploy Laravel App
-
 on:
   push:
-    branches:
-      - main  # The branch to trigger deployment (can be `main`, `master`, or any branch)
-
+      branches:
+      - master
+name:  Deploy website on push
 jobs:
-  deploy:
+  web-deploy:
+    name:  Deploy
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: Checkout the latest code from the repository
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      # Step 2: Deploy to the server via SSH
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v0.1.1
-        with:
-          host: ${{ secrets.82.112.229.9 }}                # Your server IP or domain
-          username: ${{ secrets.u898003757.guri }}            # Your SSH username (e.g., root, ubuntu)
-          key: ${{ secrets.git@github.com:r-guri/resume.git }}             # SSH private key to access the server
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}       # (Optional) passphrase for the SSH key
-          script: |
-            cd /var/www/html/your-repo                    # Navigate to your project directory
-            git pull origin main                          # Pull the latest code
-            composer install --no-dev --optimize-autoloader  # Install dependencies
-            php artisan migrate --force                   # Run database migrations
-            php artisan config:cache                      # Cache the configuration
-            php artisan route:cache                       # Cache the routes
-            php artisan view:cache                        # Cache the views
-            php artisan cache:clear                       # Clear other caches (optional)
+    - name:  Get latest code
+      uses: actions/checkout@v4
+    
+    - name:  Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: 82.112.229.9
+        username: u898003757.guri
+        password: Guri@4321#
