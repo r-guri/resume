@@ -4,9 +4,9 @@
 <div class="page page-center">
       <div class="container container-tight py-4">
         <div class="text-center mb-4">
-          <a href="." class="navbar-brand navbar-brand-autodark">
-           99CodeHub
-          </a>
+  
+        <a href="." class="navbar-brand navbar-brand-autodark"><h1>99CodeHub</h1></a>
+        
         </div>
         <form class="card card-md" action="{{url('forgotPassword')}}" method="POST" autocomplete="off" novalidate>
         @csrf

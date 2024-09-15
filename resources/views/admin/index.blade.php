@@ -1,18 +1,17 @@
 @include ('admin.css')
 
   <body  class=" d-flex flex-column">
-    <div class="page page-center">
-      <div class="container container-normal py-4">
-        <div class="row align-items-center g-4">
-          <div class="col-lg">
-            <div class="container-tight">
-              <div class="text-center mb-4">
-                <a href="." class="navbar-brand navbar-brand-autodark"><h1>99CodeHub</h1></a>
-              </div>
-              <div class="card card-md">
-                <div class="card-body">
-                  <h2 class="h2 text-center mb-4">Login to your account</h2>
-                  <form action="{!! url('login') !!}" method="POST" autocomplete="off" novalidate> @if ($errors->has('email'))
+  <div class="page page-center">
+      <div class="container container-tight py-4">
+        <div class="text-center mb-4">
+            
+        <a href="." class="navbar-brand navbar-brand-autodark"><h1>99CodeHub</h1></a>
+        
+        </div>
+        <div class="card card-md">
+          <div class="card-body">
+            <h2 class="h2 text-center mb-4">Login to your account</h2>
+            <form action="{!! url('login') !!}" method="POST" autocomplete="off" novalidate> @if ($errors->has('email'))
                                    <div class="alert alert-danger" role="alert">
                     {!! $errors->first('email') !!}
                     </div>
@@ -42,7 +41,7 @@
                 @endif
                 @csrf <!-- This is important for Laravel to verify the form submission -->
                
-                    <div class="mb-3">
+                <div class="mb-3">
                       <label class="form-label">Email address</label>
                       <input type="email" name="email" class="form-control" placeholder="your@email.com" autocomplete="off">
                     </div>
@@ -61,8 +60,8 @@
                           </a>
                         </span>
                       </div>
-                    </div>
-                    <div class="mb-2">
+              </div>
+              <div class="mb-2">
                       <label class="form-check">
                         <input type="checkbox" class="form-check-input"/>
                         <span class="form-check-label">Remember me on this device</span>
@@ -71,18 +70,14 @@
                     <div class="form-footer">
                       <button type="submit" class="btn btn-primary w-100">Sign in</button>
                     </div>
-                  </form>
-                </div>
-              </div>
-              <div class="text-center text-secondary mt-3">
-                Don't have account yet? <a href="{{url('signup')}}" tabindex="-1">Sign Up</a>
-              </div>
-            </div>
+</form>
           </div>
-          <div class="col-lg d-none d-lg-block">
-            <img src="public/admin/static/illustrations/undraw_secure_login_pdn4.svg" height="300" class="d-block mx-auto" alt="">
-          </div>
+        
         </div>
+        <div class="text-center text-secondary mt-3">
+                Don't have account yet? <a href="{{url('signup')}}" tabindex="-1"><b>New Register</b></a>
+              </div>
       </div>
     </div>
+  
 @include ('admin.scripts')
