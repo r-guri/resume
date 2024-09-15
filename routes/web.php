@@ -25,6 +25,8 @@ Route::get('signup', [AuthController::class, 'signup'])->name('signup');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::get('logout', [AuthController::class, 'logout']);
 Route::post('register', [AuthController::class, 'register'])->name('register');
+Route::get('forgot-password', [AuthController::class, 'forgotpassword']);
+Route::post('forgotPassword', [AuthController::class, 'forgotPasswordAction'])->name('forgotPassword');
 
 Route::get('sa', function () {
     return view('admin.index');
