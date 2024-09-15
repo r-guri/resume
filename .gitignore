@@ -3,8 +3,6 @@
 /public/build
 /public/hot
 /public/storage
-/resources\views\common\scripts.blade.php
-/resources\views\common\css.blade.php
 /storage/*.key
 /vendor
 .env
