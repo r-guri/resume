@@ -21,15 +21,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/lib/animate/animate.min.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4322845025326566"
     crossorigin="anonymous"></script>
     <!-- Template Stylesheet -->
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('public/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
