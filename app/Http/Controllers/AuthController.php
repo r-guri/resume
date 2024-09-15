@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
 use App\Models\User;
+use App\Models\FormStep;
 use Auth;
 use Hash;
 use Validator;
@@ -96,10 +97,11 @@ public function forgotPasswordAction(Request $request)
         $randomPassword = Str::random(10); // You can adjust the length
         $user->password = Hash::make($randomPassword);
         $user->save();
-        Mail::send('emails.password_reset', ['password' => $randomPassword], function ($message) use ($user) {
-            $message->to($user->email);
-            $message->subject('Password Reset Notification');
-        });
+        Mail::send('emails.password_reset', ['password' => $randomPassword, 'username' => $user->name,'email' => $user->email], function ($message) use ($user) {
+          $message->to($user->email);
+          $message->subject('Password Reset Notification');
+      });
+      
         return redirect('/forgot-password')->with('success','A new password has been sent to your email ')->withInput();
         // return response()->json(['success' => 'A new password has been sent to your email.']);
       } else {
@@ -107,4 +109,45 @@ public function forgotPasswordAction(Request $request)
         // return response()->json(['error' => 'Email not found.'], 404);
     }
 }
+public function showPasswordChangeForm()
+{
+  if (Auth::check()) 
+  {
+$formStep = FormStep::where('user_id', Auth::id())->first();
+if ($formStep) {
+  return view('admin.changePassword',['image' => $formStep->image]);
+
+}else{
+  $image=[];
+}
+}
+}
+
+public function passwordchangeAction(Request $request)
+{
+      // Validate form inputs
+      $request->validate([
+          'oldpassword' => 'required',
+          'newpassword' => 'required|min:6',
+          'confirmpassword' => 'required|same:newpassword'
+      ], [
+          'oldpassword.required' => 'Please enter the old password.',
+          'newpassword.required' => 'Please enter the new password.',
+          'newpassword.min' => 'The new password must be at least 6 characters.',
+          'confirmpassword.required' => 'Please confirm the new password.',
+          'confirmpassword.same' => 'The confirm password does not match the new password.'
+      ]);
+      $oldpassword = $request->input('oldpassword');
+      $newpassword = $request->input('newpassword');
+      $user = auth()->user(); 
+  if (Hash::check($oldpassword, $user->password)) {
+          $user->password = Hash::make($newpassword);
+          $user->save();
+    return back()->with('success', 'Password changed successfully.');
+      } else {
+        
+          return back()->withErrors(['error' => 'The old password does not match our records.']);
+      }
+  }
+
 }

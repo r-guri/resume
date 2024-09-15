@@ -41,6 +41,9 @@ Route::get('ViewChoose', function () { return view('admin/choose'); });
 
 // Admin actions (protected by middleware)
 Route::middleware(['auth'])->group(function () {
+    Route::get('password_change', [AuthController::class, 'showPasswordChangeForm'])->name('password_change');
+Route::post('passwordchangeAction', [AuthController::class, 'passwordchangeAction'])->name('passwordchangeAction');
+
     Route::post('updateTop', [ManageCodeHubController::class, 'topHeaderUpdate']);
     Route::post('mainCountPost', [ManageCodeHubController::class, 'mainCountUpdateAction']);
     Route::post('aboutPost', [ManageCodeHubController::class, 'aboutUpdateAction']);
