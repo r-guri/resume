@@ -11,7 +11,7 @@
                     <p class="mb-4">{{$aboutData->aboutDisc}}</p>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award1</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Awards</h5>
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
