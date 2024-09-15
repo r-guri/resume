@@ -1,23 +1,15 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{url('lib/wow/wow.min.js')}}"></script>
-    <script src="{{url('lib/easing/easing.min.js')}}"></script>
-    <script src="{{url('lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{url('lib/counterup/counterup.min.js')}}"></script>
-    <script src="{{url('lib/owlcarousel/owl.carousel.min.js')}}"></script>
-    <script src="{{url('lib/js/main.js')}}"></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf1VkQqAAAAALRvUC7sbOR7IvVqCshP7kNxLPTC"></script>
-    <!-- Your code -->
+    <script src="{{url('public/lib/wow/wow.min.js')}}"></script>
+    <script src="{{url('public/lib/easing/easing.min.js')}}"></script>
+    <script src="{{url('public/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{url('public/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{url('public/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{url('public/lib/js/main.js')}}"></script>
+    
 </body>
 </html>
-<script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6Lf1VkQqAAAAALRvUC7sbOR7IvVqCshP7kNxLPTC', {action: 'LOGIN'});
-    });
-  }
-</script>
+
 <script>
 function calculatePercentage() {
         var totalMarks = parseFloat(document.getElementById('total_marks').value);
