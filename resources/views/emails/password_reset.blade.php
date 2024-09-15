@@ -35,7 +35,7 @@
     <div class="container">
         <p>Hello Dear,</p>
         <p>Your password has been successfully reset. Here is your new password:</p>
-        <p><h5>{{ $password }}</h5></p>
+        <p><strong>{{ $password }}</strong></p>
         <p>Please log in and change your password as soon as possible to ensure your account’s security.</p>
         <p>Thank you,<br>99CodeHub<br>Conatct No: 80536-15639</p>
     </div>
