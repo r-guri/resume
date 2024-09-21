@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ManageCodeHubController;
 use App\Http\Controllers\MultiStepFormController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\GoogleController;
+use Laravel\Socialite\Facades\Socialite;
 
 // Public routes
 Route::get('/', [HomeController::class, 'topHeader']);
@@ -92,3 +94,7 @@ Route::get('/clear-cache', function() {
     Artisan::call('view:cache');
     return "Caches cleared!";
 });
+
+
+Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('auth.google.callback');
