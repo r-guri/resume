@@ -11,7 +11,6 @@ class GoogleController extends Controller
     // Redirect to Google for authentication
     public function redirectToGoogle()
     {
-        \Log::info('Session Before Redirect:', session()->all());
         return Socialite::driver('google')->redirect();
     }
     
@@ -21,7 +20,7 @@ class GoogleController extends Controller
     {
         try {
             $googleUser = Socialite::driver('google')->user();
-            dd($googleUser);
+            // dd($googleUser);
             // Find or create a user
             $user = User::firstOrCreate(
                 ['email' => $googleUser->getEmail()],
@@ -38,7 +37,7 @@ class GoogleController extends Controller
             return redirect()->intended('dashboard'); // Redirect to intended page
         } catch (Exception $e) {
             // Log the error for debugging
-            \Log::error('Google Login Error: ', ['message' => $e->getMessage()]);
+            // \Log::error('Google Login Error: ', ['message' => $e->getMessage()]);
             return redirect()->route('login')->withErrors(['error' => 'Failed to login using Google']);
         }
     }
