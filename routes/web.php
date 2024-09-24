@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\VerifyCsrfToken;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ManageCodeHubController;
@@ -95,6 +96,7 @@ Route::get('/clear-cache', function() {
     return "Caches cleared!";
 });
 
-
-Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
-Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('auth.google.callback');
+Route::middleware(['web'])->group(function () {
+    Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+    Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+});
