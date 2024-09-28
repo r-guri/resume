@@ -19,16 +19,16 @@
 
         <!-- Libraries Stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="public/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="public/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="public/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="public/css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -152,7 +152,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -167,7 +167,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -182,7 +182,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -197,7 +197,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="public/img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -234,14 +234,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="public/lib/wow/wow.min.js"></script>
+    <script src="public/lib/easing/easing.min.js"></script>
+    <script src="public/lib/waypoints/waypoints.min.js"></script>
+    <script src="public/lib/counterup/counterup.min.js"></script>
+    <script src="public/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="public/lib/lightbox/js/lightbox.min.js"></script>
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="public/js/main.js"></script>
     </body>
 
 </html>
