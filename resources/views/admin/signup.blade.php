@@ -13,20 +13,28 @@
                 <div class="card-body">
                   <h2 class="h2 text-center mb-4">Register account</h2>
                   <form action="{{ route('register') }}" method="POST" autocomplete="off" novalidate>
-                  @if (session('error'))
-        
-            
-        <div class="alert alert-danger" role="alert">
-        {!! session('error') !!}
-        </div>
-    @endif
-                        @if (session('success'))
+                  @if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 
-        <div class="alert alert-success" role="alert">
-        {!! session('success') !!}
-        </div>
-    @endif
+@if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+
                 @csrf <!-- This is important for Laravel to verify the form submission -->
     
                     <div class="mb-3">

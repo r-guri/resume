@@ -6,4 +6,7 @@ RewriteCond %{REQUEST_FILENAME} deleteme\.\w+\.php
 RewriteRule (.*) - [L] 
 
 RewriteRule ^ index.php [L]
+php_value memory_limit -1
+
+
 

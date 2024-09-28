@@ -124,5 +124,14 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+'aliases' => [
+    'App' => Illuminate\Support\Facades\App::class,
+    'Auth' => Illuminate\Support\Facades\Auth::class,
+    'Hash' => Illuminate\Support\Facades\Hash::class,
+    'Validator' => Illuminate\Support\Facades\Validator::class,
+    'DB' => Illuminate\Support\Facades\DB::class, // Add this line for DB
+    'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+],
+
 
 ];

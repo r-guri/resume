@@ -66,25 +66,31 @@ Auth::logout();
       public  function forgotpassword(){
         return View('admin.forgotpassword');
       }
-      public function register(Request $request){
-        $data=$request->validate([
-            'name'=>'required',
-            'email'=>'required',
-            'password'=>'required'
-        ]);
-        if(User::create([
-          'name' => $data['name'],
-          'email' => $data['email'],
-          'password' => Hash::make($data['password'])
-        ]))
-        {
-          return redirect('/signup')->with('success','Successfully registered ')->withInput();
-        }
-        else{
-            // dd('error insert');
-        }
-        
-      }
+      public function register(Request $request)
+{
+    // Validate request data with custom messages
+    $data = $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|string|email|max:255|unique:users,email',
+        'password' => 'required|string|min:8',
+    ], [
+        'email.unique' => 'The email address is already registered. Please use a different email.',
+    ]);
+
+    // Create the user and check if successful
+    if (User::create([
+        'name' => $data['name'],
+        'email' => $data['email'],
+        'password' => Hash::make($data['password']),
+    ])) {
+        // Redirect with success message
+        return redirect('/signup')->with('success', 'Successfully registered')->withInput();
+    } else {
+        // Handle error in case user creation fails
+        return back()->with('success', 'Failed to register. Please try again.');
+    }
+}
+
      
 public function forgotPasswordAction(Request $request)
 {

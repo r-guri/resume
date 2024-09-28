@@ -10,11 +10,11 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="{{ asset('public/admin/css/tabler.min.css?1692870487')}}" rel="stylesheet"/>
-    <link href="{{ asset('public/admin/css/tabler-flags.min.css?1692870487')}}" rel="stylesheet"/>
-    <link href="{{ asset('public/admin/css/tabler-payments.min.css?1692870487')}}" rel="stylesheet"/>
-    <link href="{{ asset('public/admin/css/tabler-vendors.min.css?1692870487')}}" rel="stylesheet"/>
-    <link href="{{ asset('public/admin/css/demo.min.css?1692870487')}}" rel="stylesheet"/>
+    <link href="{{ asset('admin/css/tabler.min.css?1692870487')}}" rel="stylesheet"/>
+    <link href="{{ asset('admin/css/tabler-flags.min.css?1692870487')}}" rel="stylesheet"/>
+    <link href="{{ asset('admin/css/tabler-payments.min.css?1692870487')}}" rel="stylesheet"/>
+    <link href="{{ asset('admin/css/tabler-vendors.min.css?1692870487')}}" rel="stylesheet"/>
+    <link href="{{ asset('admin/css/demo.min.css?1692870487')}}" rel="stylesheet"/>
    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4322845025326566"
     crossorigin="anonymous"></script>

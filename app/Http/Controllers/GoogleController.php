@@ -1,10 +1,12 @@
 <?php 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Socialite;
-use App\Models\User;
 use Auth;
+use Illuminate\Http\Request;
+use Laravel\Socialite\Facades\Socialite;
+use App\Models\User;
+use Exception;
+use Illuminate\Support\Facades\Log;
 
 class GoogleController extends Controller
 {
@@ -13,33 +15,34 @@ class GoogleController extends Controller
     {
         return Socialite::driver('google')->redirect();
     }
-    
 
     // Handle Google callback and login
     public function handleGoogleCallback()
     {
         try {
+            // Get the user information from Google
             $googleUser = Socialite::driver('google')->user();
-            // dd($googleUser);
-            // Find or create a user
-            $user = User::firstOrCreate(
-                ['email' => $googleUser->getEmail()],
-                [
-                    'name' => $googleUser->getName(),
-                    'google_id' => $googleUser->getId(),
-                    'password' => bcrypt(Str::random(16)), // Random password for non-standard users
-                ]
-            );
+
+            $findUser = User::where('google_id', $googleUser->id)->first(); // Use ->id to find the user
     
-            // Log the user in
-            Auth::login($user);
-            
-            return redirect()->intended('dashboard'); // Redirect to intended page
+            if ($findUser) {
+                Auth::login($findUser);
+                return redirect()->intended('form'); // Redirect to intended page
+            } else {
+                $user = User::updateOrCreate(
+                    ['email' => $googleUser->email],
+                    [
+                        'name' => $googleUser->name,
+                        'google_id' => $googleUser->id,
+                        'password' => encrypt('8053615639'), 
+                    ]
+                );
+                Auth::login($user);
+                return redirect()->intended('form'); // Redirect to intended page
+            }
         } catch (Exception $e) {
-            // Log the error for debugging
-            // \Log::error('Google Login Error: ', ['message' => $e->getMessage()]);
+           
             return redirect()->route('login')->withErrors(['error' => 'Failed to login using Google']);
         }
     }
-    
 }

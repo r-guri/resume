@@ -64,7 +64,17 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'replace_placeholders' => true,
         ],
+    'stack' => [
+        'driver' => 'stack',
+        'channels' => ['single'],
+    ],
 
+    'single' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/laravel.log'),
+        'level' => 'debug',
+    ],
+    
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
