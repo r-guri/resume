@@ -18,17 +18,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link href="public/lib/animate/animate.min.css" rel="stylesheet">
-        <link href="public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="public/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+        <link href="{{ asset('public/lib/animate/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('public/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('public/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('public/css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="public/css/style.css" rel="stylesheet">
+        <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
     </head>
 
     <body>
@@ -41,7 +39,6 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Topbar Start -->
         <div class="container-fluid topbar px-0 d-none d-lg-block">
             <div class="container px-0">
@@ -49,7 +46,6 @@
                     <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                         <div class="d-flex flex-wrap">
                             <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Sirsa Haryana</a>
-                            <!-- <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+91</a> -->
                             <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>99codehub@gmail.com</a>
                         </div>
                     </div>
@@ -66,16 +62,13 @@
         </div>
         <!-- Topbar End -->
 
-
         <!-- Navbar & Hero Start -->
         <div class="container-fluid sticky-top px-0">
-            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
-            </div>
+            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
             <div class="container px-0">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
                     <a href="index.html" class="navbar-brand p-0">
-                        <h1 class="text-primary m-0"><img src="img/logo.png" width="50"> Code Hub</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                        <h1 class="text-primary m-0"><img src="{{ asset('public/img/logo.png') }}" width="50"> Code Hub</h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>
@@ -144,105 +137,68 @@
         <!-- Services Start -->
         <div class="container-fluid service py-5">
             <div class="container py-5">
-                <!-- <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Courses</h4>
-                    <h1 class="display-4"> Our Courses </h1>
-                </div> -->
                 <div class="row g-4 justify-content-center text-center">
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="{{ asset('public/img/service-1.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
                                     <a href="#" class="h4 mb-4 d-inline-flex text-start">JPG to PDF</a>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
+                                    dignissimos dolor!</p>
                                 </div>
+                                <a href="#" class="btn btn-primary">Read More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start">JPDF to PNG</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"> PDF to JPG</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <img src="public/img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"> JPG to PNG </a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-12">
-                        <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Services More</a>
-                    </div> -->
                 </div>
             </div>
         </div>
         <!-- Services End -->
-            <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-primary"><i class="fas fa-copyright text-light me-2"></i>99 Code Hub</a>, All right reserved.</span>
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-6">
+                        <h4 class="text-white mb-4">Contact Us</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sirsa Haryana, India</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>99codehub@gmail.com</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                      Designed By <a class="border-bottom text-primary" href="https://htmlcodex.com">99 Code Hub</a>
+                    <div class="col-lg-6 col-md-6">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" class="form-control p-3" placeholder="Your Email Address">
+                                <button class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div> 
-        
+        </div>
+        <!-- Footer End -->
+
         <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="public/lib/wow/wow.min.js"></script>
-    <script src="public/lib/easing/easing.min.js"></script>
-    <script src="public/lib/waypoints/waypoints.min.js"></script>
-    <script src="public/lib/counterup/counterup.min.js"></script>
-    <script src="public/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="public/lib/lightbox/js/lightbox.min.js"></script>
-    <!-- Template Javascript -->
-    <script src="public/js/main.js"></script>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+        <!-- Libraries and JavaScript Libraries -->
+        <script src="{{ asset('public/lib/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('public/lib/wow/wow.min.js') }}"></script>
+        <script src="{{ asset('public/lib/easing/easing.min.js') }}"></script>
+        <script src="{{ asset('public/lib/waypoints/waypoints.min.js') }}"></script>
+        <script src="{{ asset('public/lib/counterup/counterup.min.js') }}"></script>
+        <script src="{{ asset('public/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('public/lib/isotope/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ asset('public/lib/lightbox/js/lightbox.min.js') }}"></script>
+
+        <!-- Bootstrap and Template JavaScript -->
+        <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('public/js/main.js') }}"></script>
+
     </body>
 
 </html>
