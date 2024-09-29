@@ -19,9 +19,3 @@ jobs:
         password: Guri@4321#
         server-dir: /home/u898003757/domains/99codehub.cloud/public_html/  # Update this path with your actual server directory path
         local-dir: ./  # Update with your local project directory (usually root of the project)
-        exclude: |
-            /resources/views/common  # Exclude the non-existent directory
-            .git*
-            .env
-            node_modules/
-            vendor/
