@@ -6,7 +6,7 @@
     <script src="{{url('public/lib/counterup/counterup.min.js')}}"></script>
     <script src="{{url('public/lib/owlcarousel/owl.carousel.min.js')}}"></script>
     <script src="{{url('public/lib/js/main.js')}}"></script>
-    
+      
 </body>
 </html>
 
