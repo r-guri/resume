@@ -152,7 +152,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <!-- <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -167,7 +167,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <!-- <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -182,7 +182,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <!-- <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
@@ -197,7 +197,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
-                                <img src="public/img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <!-- <img src="public/img/service-2.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
                             </div>
                             <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
