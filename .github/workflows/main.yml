@@ -17,3 +17,11 @@ jobs:
         server: 82.112.229.9
         username: u898003757.guri
         password: Guri@4321#
+        server-dir: /your/server/directory # Update this path with your actual server directory path
+        local-dir: ./  # Update with your local project directory (usually root of the project)
+        exclude: |
+            /resources/views/common  # Exclude the non-existent directory
+            .git*
+            .env
+            node_modules/
+            vendor/
