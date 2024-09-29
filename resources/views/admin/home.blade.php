@@ -143,78 +143,123 @@
 
         <!-- Services Start -->
         <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <!-- <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Courses</h4>
-                    <h1 class="display-4"> Our Courses </h1>
-                </div> -->
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <!-- <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start">JPG to PDF</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
+    <div class="container py-5">
+        <div class="row g-4 justify-content-center text-center">
+            <!-- JPG to PDF -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">JPG to PDF</a>
+                            <p class="mb-4">Easily convert your JPG images into high-quality PDF files with this tool.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <!-- <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start">JPDF to PNG</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
+                </div>
+            </div>
+
+            <!-- PDF to PNG -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">PDF to PNG</a>
+                            <p class="mb-4">Convert your PDF documents into PNG images while maintaining quality and clarity.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <!-- <img src="public/img/service-1.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"> PDF to JPG</a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
+                </div>
+            </div>
+
+            <!-- PDF to JPG -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">PDF to JPG</a>
+                            <p class="mb-4">Effortlessly transform PDF pages into high-resolution JPG images.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item bg-light rounded">
-                            <div class="service-img">
-                                <!-- <img src="public/img/service-2.jpg" class="img-fluid w-100 rounded-top" alt=""> -->
-                            </div>
-                            <div class="service-content text-center p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"> JPG to PNG </a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
-                                    </p>
-                                    
-                                </div>
-                            </div>
+                </div>
+            </div>
+
+            <!-- JPG to PNG -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">JPG to PNG</a>
+                            <p class="mb-4">Quickly convert JPG images into PNG format with transparency support.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
                         </div>
                     </div>
-                    <!-- <div class="col-12">
-                        <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Services More</a>
-                    </div> -->
+                </div>
+            </div>
+
+            <!-- PNG to JPG -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">PNG to JPG</a>
+                            <p class="mb-4">Convert PNG images to JPG format while reducing file size without loss of quality.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compress PDF -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">Compress PDF</a>
+                            <p class="mb-4">Reduce the file size of your PDF documents without compromising quality.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Merge PDF -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.3s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">Merge PDF</a>
+                            <p class="mb-4">Combine multiple PDF files into a single document with ease.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Split PDF -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.5s">
+                <div class="service-item bg-light rounded">
+                    <div class="service-img"></div>
+                    <div class="service-content text-center p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="h4 mb-4 d-inline-flex text-start">Split PDF</a>
+                            <p class="mb-4">Split large PDF files into smaller, more manageable documents.</p>
+                            <a class="btn btn-light rounded-pill py-1 px-4" href="#">Click here</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
         <!-- Services End -->
             <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
